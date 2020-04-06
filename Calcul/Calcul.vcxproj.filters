@@ -18,12 +18,30 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="getopt.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trans.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="fraction.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="calcul.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="getopt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="trans.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
     <ClInclude Include="fraction.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="calcul.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
