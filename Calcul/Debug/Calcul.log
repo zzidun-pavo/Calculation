@@ -1,2 +1,7 @@
-﻿  Calcul.cpp
+﻿  calcul.cpp
+  fraction.cpp
+  main.cpp
+  trans.cpp
+  正在生成代码...
+  getopt.c
   Calcul.vcxproj -> D:\Calculation\Calcul\Debug\Calcul.exe
