@@ -11,10 +11,10 @@ https://github.com/zzidun-pavo/Calculation.git
 | Development                             | 开发                                    |                  |                  |
 | · Analysis                              | · 需求分析 (包括学习新技术)             | 30               | 40               |
 | · Design Spec                           | · 生成设计文档                          | 50               | 40               |
-| · Design Review                         | · 设计复审 (和同事审核设计文档)         | 30               |                  |
-| · Coding Standard                       | · 代码规范 (为目前的开发制定合适的规范) | 30               |                  |
-| · Design                                | · 具体设计                              | 60               |                  |
-| · Coding                                | · 具体编码                              | 400              |                  |
+| · Design Review                         | · 设计复审 (和同事审核设计文档)         | 30               | 10               |
+| · Coding Standard                       | · 代码规范 (为目前的开发制定合适的规范) | 30               | 20               |
+| · Design                                | · 具体设计                              | 60               | 30               |
+| · Coding                                | · 具体编码                              | 400              | 120              |
 | · Code Review                           | · 代码复审                              | 100              |                  |
 | · Test                                  | · 测试（自我测试，修改代码，提交修改）  | 60               |                  |
 | Reporting                               | 报告                                    |                  |                  |
