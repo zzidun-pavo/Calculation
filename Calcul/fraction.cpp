@@ -1,6 +1,17 @@
-#include "Fraction.h"
+#include "fraction.h"
 
 #include <iostream>
+
+long long gcd(long long a, long long b)
+{
+	while (a ^= b ^= a ^= b %= a);
+	return b;
+}
+
+long long lcm(long long a, long long b)
+{
+	return a * b / gcd(a, b);
+}
 
 Fraction::Fraction() {
 	this->numerator = 1;
@@ -17,11 +28,6 @@ void Fraction::contract() {
 	long long theGcd = gcd(numerator, denominator);
 	numerator /= theGcd;
 	denominator /= theGcd;
-}
-
-long long Fraction::gcd(long long a, long long b) {
-	while (a ^= b ^= a ^= b %= a);
-	return b;
 }
 
 Fraction Fraction::operator+(const Fraction& o) {
@@ -64,8 +70,30 @@ bool Fraction::operator<(const Fraction& o) {
 		return false;
 }
 
+bool Fraction::operator>(const Fraction& o) {
+	long long theGcd = gcd(denominator, o.denominator);
+	if (numerator * o.denominator / theGcd > o.numerator * denominator / theGcd)
+		return true;
+	else
+		return false;
+}
+
 bool Fraction::operator==(const Fraction& o) {
 	if (numerator == o.numerator && denominator == o.denominator)
+		return true;
+	else
+		return false;
+}
+
+bool Fraction::operator<=(const Fraction& o) {
+	if (operator<(o) || operator==(o))
+		return true;
+	else
+		return false;
+}
+
+bool Fraction::operator>=(const Fraction& o) {
+	if (operator>(o) || operator==(o))
 		return true;
 	else
 		return false;
