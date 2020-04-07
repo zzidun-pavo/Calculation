@@ -1,9 +1,7 @@
 #pragma once
 
-#include <random>
-#include <ctime>
-#include <stdio.h>
+//生成题目
+void makeQuestion(int range, int num);
 
-int calcul(int range, int num);
-
-	
+//检查答案
+void checkAnswer(char* ePath, char* aPath);

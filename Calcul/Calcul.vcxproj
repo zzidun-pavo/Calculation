@@ -149,14 +149,14 @@
   <ItemGroup>
     <ClCompile Include="calcul.cpp" />
     <ClCompile Include="fraction.cpp" />
-    <ClCompile Include="getopt.c" />
+    <ClCompile Include="opt_solver.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="opt_solver.h" />
     <ClCompile Include="trans.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="calcul.h" />
     <ClInclude Include="fraction.h" />
-    <ClInclude Include="getopt.h" />
     <ClInclude Include="trans.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

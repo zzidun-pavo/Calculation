@@ -1,7 +1,6 @@
 #pragma once
 
-#include <iostream>
-
+#include <string>
 //计算最大公因数
 long long gcd(long long a, long long b);
 
@@ -16,6 +15,7 @@ public:
 	//构造方法
 	Fraction();
 	Fraction(long long numerator, long long denomiator);
+	Fraction(std::string str);
 
 	void contract();//通分
 	Fraction operator+(const Fraction& o);//重载加法运算符
@@ -29,4 +29,5 @@ public:
 	bool operator<=(const Fraction& o);//重载小于等于运算符
 	bool operator>=(const Fraction& o);//重载大于等于运算符
 	bool operator!=(const Fraction& o);//重载不等于运算符
+	std::string toString();//将分数类转换成字符串
 };

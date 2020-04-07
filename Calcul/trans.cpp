@@ -1,11 +1,12 @@
 #include "trans.h"
 
-int str2Int(char* str, int radix)
+int cstrToInt(const char* str)
 {
-	int x = 0;
-	int len = 0;
+	if (str == nullptr) return 0;
+
+	int x = 0; int len = 0;
 	while(str[len]) {
-		x *= radix;
+		x *= 10;
 		x += str[len++] - '0';
 	}
 	return x;

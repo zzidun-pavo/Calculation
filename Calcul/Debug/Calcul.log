@@ -1,7 +1,8 @@
 ﻿  calcul.cpp
-  fraction.cpp
   main.cpp
-  trans.cpp
   正在生成代码...
-  getopt.c
-  Calcul.vcxproj -> D:\Calculation\Calcul\Debug\Calcul.exe
+Debug\opt_solver.obj : warning LNK4042: 对象被多次指定；已忽略多余的指定
+main.obj : error LNK2019: 无法解析的外部符号 "public: __thiscall OptSolver::OptSolver(int,char * *)" (??0OptSolver@@QAE@HPAPAD@Z)，该符号在函数 _main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 "public: int __thiscall OptSolver::getArgId(char const *)" (?getArgId@OptSolver@@QAEHPBD@Z)，该符号在函数 _main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 "public: char * __thiscall OptSolver::getArg(int)" (?getArg@OptSolver@@QAEPADH@Z)，该符号在函数 _main 中被引用
+D:\Calculation\Calcul\Debug\Calcul.exe : fatal error LNK1120: 3 个无法解析的外部命令
