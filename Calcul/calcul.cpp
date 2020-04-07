@@ -7,14 +7,29 @@
 
 void makeQuestion(int range, int num)
 {
-	FILE *oFile = fopen("./Exercises.txt", "w");
+	FILE* oFile;
+	errno_t err;
+	if ((err = fopen_s(&oFile, "./Exercises.txt", "w")) != 0) {
+		printf("文件打开失败./Exercise.txt\n");
+		return;
+	}
 	
 }
 
 void checkAnswer(char* ePath, char* aPath)
 {
-	FILE* eFile = fopen(ePath, "r");
-	FILE* aFile = fopen(aPath, "r");
-	FILE* gFile = fopen("../Grade.txt", "w");
-
+	FILE* eFile, * aFile,* gFile;
+	errno_t err;
+	if ((err = fopen_s(&eFile, ePath, "r")) != 0) {
+		printf("文件打开失败%s\n", ePath);
+		return;
+	}
+	if ((err = fopen_s(&aFile, aPath, "r")) != 0) {
+		printf("文件打开失败%s\n", aPath);
+		return;
+	}
+	if ((err = fopen_s(&gFile, "./Grade.txt", "w")) != 0) {
+		printf("文件打开失败Grade.txt\n");
+		return;
+	}
 }
