@@ -259,8 +259,10 @@ void checkAnswer(std::string ePath, std::string aPath)
           std::getline(aStream, aLine))
     {
         //去掉前面的题号
-        eLine = eLine.substr(2);
-        aLine = aLine.substr(2);
+        unsigned int cat = 0;
+        while(eLine[cat] != ':') cat++;
+        eLine = eLine.substr(cat+1);
+        aLine = aLine.substr(cat+1);
         //然后扔到calcul函数里算一个结果
         if(calcul(eLine) == Fraction(aLine))
             correct.push_back(cnt++);
