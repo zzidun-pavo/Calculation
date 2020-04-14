@@ -1,2 +1,0 @@
-D:\Calculation\Calcul\Debug\Calcul.exe
-D:\Calculation\Calcul\Debug\Calcul.pdb
